@@ -20,6 +20,12 @@
 	# Clone a repository including all submodules
 	c = clone --recursive
 
+	# Add a file
+	a = add
+
+	# Commit with a message
+	cm = commit -m
+
 	# Commit all changes
 	ca = !git add -A && git commit -av
 
