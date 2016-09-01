@@ -20,7 +20,7 @@ alias gd="g diff"
 alias ga="g add"
 alias gp="g pull"
 alias gpu="g push"
-alias gcm="g commit"
+alias gcm="g commit -m"
 alias h="history"
 alias j="jobs"
 
