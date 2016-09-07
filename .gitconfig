@@ -20,6 +20,12 @@
 	# Clone a repository including all submodules
 	c = clone --recursive
 
+	# Change branch
+	ck = checkout
+
+	# Change branch and create a new one
+    ckb = checkout -b
+
 	# Add a file
 	a = add
 
