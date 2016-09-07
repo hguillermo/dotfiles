@@ -21,8 +21,6 @@ alias ga="g add"
 alias gp="g pull"
 alias gpu="g push"
 alias gcm="g commit -m"
-alias gc="g checkout"
-alias gcb="g checkout -b"
 alias h="history"
 alias j="jobs"
 
