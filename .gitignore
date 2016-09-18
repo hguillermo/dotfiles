@@ -15,3 +15,6 @@ Thumbs.db
 
 # Ignore JETBRAINS editor conf files
 .idea
+
+# Ignore private files
+private.txt
