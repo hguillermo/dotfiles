@@ -24,6 +24,7 @@ alias ga="g add"
 alias gp="g pull"
 alias gpu="g push"
 alias gcm="g commit -m"
+alias gmmp="git checkout master && git merge develop && git push && git checkout develop"
 alias h="history"
 alias j="jobs"
 
