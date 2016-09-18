@@ -53,5 +53,39 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
+# Java stuff
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Fast Company stuff
+export GITREPO=/Users/hguillermo/code
+export EC2_PRIVATE_KEY=~/.ssh/id_rsa.pem
+export EC2_CERT=~/.ssh/id_rsa_cert.pem
+export AWS_CREDENTIAL_FILE=~/.aws-credentials
+export FC_LIB=$GITREPO/infrastructure/lib
+export FC_TOOLS_HOME=$GITREPO/infrastructure/fc_tools
+export FC_AWS_HOME=$GITREPO/infrastructure/fc_aws
+export AWS_ELB_HOME=$FC_LIB/aws-elb
+export EC2_HOME=$FC_LIB/aws-ec2
+export AWS_AUTO_SCALING_HOME=$FC_LIB/aws-autoscaling
+export AWS_CLOUDWATCH_HOME=$FC_LIB/aws-cloudwatch
+export AWS_RDS_HOME=$FC_LIB/aws-rds
+export PATH=$AWS_ELB_HOME/bin:$EC2_HOME/bin:$AWS_AUTO_SCALING_HOME/bin:$AWS_CLOUDWATCH_HOME/bin:$AWS_RDS_HOME/bin:$PATH
+export PATH=$FC_LIB:$FC_TOOLS_HOME/bin:$FC_AWS_HOME/bin:$PATH
+export FCAWS_PROXY_HOST=gate.fast-co.net
+export FCAWS_PROXY_HOST_REGION=us-east-1
+export EC2_URL=http://ec2.us-east-1.amazonaws.com
+export THANKSJETPACK="/Users/hguillermo/code/thanks-jetpack"
+export PATH=$THANKSJETPACK/bin:$PATH
+export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig":"/opt/X11/lib/pkgconfig/"
+export AWS_ACCESS_KEY=""
+export AWS_SECRET_KEY=""
+export TXJP_AWS_ACCESSKEYID=""
+export TXJP_AWS_SECRETACCESSKEY=""
+export NODE_ENV="development"
+
+# Node Version Manager tool
 export NVM_DIR="/Users/hguillermo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# GOLAND path
+export GOPATH=$HOME/code/golang
