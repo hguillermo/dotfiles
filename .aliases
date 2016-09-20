@@ -30,6 +30,7 @@ alias gss="g stash save"
 alias gsp="g stash pop"
 alias gprune="git remote prune origin"
 alias gmmp="git checkout master && git merge develop && git push && git checkout develop"
+alias gcmp="git checkout master && git pull && git checkout @{-1}"
 alias h="history"
 alias j="jobs"
 
