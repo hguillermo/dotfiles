@@ -77,10 +77,10 @@ export EC2_URL=http://ec2.us-east-1.amazonaws.com
 export THANKSJETPACK="/Users/hguillermo/code/thanks-jetpack"
 export PATH=$THANKSJETPACK/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig":"/opt/X11/lib/pkgconfig/"
-export AWS_ACCESS_KEY=""
-export AWS_SECRET_KEY=""
-export TXJP_AWS_ACCESSKEYID=""
-export TXJP_AWS_SECRETACCESSKEY=""
+export AWS_ACCESS_KEY=$FC_PRIVATE_AWS_ACCESS_KEY
+export AWS_SECRET_KEY=$FC_PRIVATE_AWS_SECRET_KEY
+export TXJP_AWS_ACCESSKEYID=$FC_PRIVATE_TXJP_AWS_ACCESSKEYID
+export TXJP_AWS_SECRETACCESSKEY=$FC_PRIVATE_TXJP_AWS_SECRETACCESSKEY
 export NODE_ENV="development"
 
 # Node Version Manager tool
