@@ -34,6 +34,7 @@ alias gss="g stash save"
 alias gsp="g stash pop"
 alias gsl="g stash list"
 alias gprune="g remote prune origin"
+# http://stackoverflow.com/questions/13064613/how-to-prune-local-tracking-branches-that-do-not-exist-on-remote-anymore
 alias gprunelocal="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d"
 alias gprunelocalD="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D"
 alias gbrl="g branch"
