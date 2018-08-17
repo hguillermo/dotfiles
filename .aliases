@@ -22,6 +22,8 @@ alias g="git"
 alias git="git"
 alias gl="g log --pretty=oneline -n 20 --graph --abbrev-commit"
 alias gll="g log"
+alias gls='function _gls(){ g log -S "$@" --source --all;};_gls'
+alias glls='function _glls(){ g log -S "$@" --source --all --pretty=oneline -n 20 --graph --abbrev-commit;};_glls'
 alias gs="g st"
 alias gd="g diff"
 alias ga="g add"
