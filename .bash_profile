@@ -34,6 +34,8 @@ fi;
 
 # Add git completion. From https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
 # Install this first: brew install bash-completion
+# Install Git and bash-completion: brew install git bash-completion ((Note: If this install fails with a 404 error,
+# and you already have git installed, just remove the git part of this brew install))
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi;
@@ -86,6 +88,7 @@ export NODE_ENV="development"
 # Node Version Manager tool
 export NVM_DIR="/Users/hguillermo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # GOLAND path
 export GOPATH=$HOME/code/golang
