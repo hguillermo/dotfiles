@@ -58,6 +58,8 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Java stuff
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+export ANDROID_HOME="/Users/hguillermo/Library/Android/sdk"
+
 # Fast Company stuff
 export GITREPO=/Users/hguillermo/code
 export EC2_PRIVATE_KEY=~/.ssh/id_rsa.pem
@@ -77,7 +79,7 @@ export FCAWS_PROXY_HOST=gate.fast-co.net
 export FCAWS_PROXY_HOST_REGION=us-east-1
 export EC2_URL=http://ec2.us-east-1.amazonaws.com
 export THANKSJETPACK="/Users/hguillermo/code/thanks-jetpack"
-export PATH=$THANKSJETPACK/bin:$PATH
+export PATH=$THANKSJETPACK/bin:$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig":"/opt/X11/lib/pkgconfig/"
 export AWS_ACCESS_KEY=$FC_PRIVATE_AWS_ACCESS_KEY
 export AWS_SECRET_KEY=$FC_PRIVATE_AWS_SECRET_KEY
@@ -92,3 +94,4 @@ export NVM_DIR="/Users/hguillermo/.nvm"
 
 # GOLAND path
 export GOPATH=$HOME/code/golang
+
