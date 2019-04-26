@@ -59,6 +59,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 export ANDROID_HOME="/Users/hguillermo/Library/Android/sdk"
+export APP_HOME="/Users/hguillermo/Library/Android/sdk/tools"
 
 # Fast Company stuff
 export GITREPO=/Users/hguillermo/code
