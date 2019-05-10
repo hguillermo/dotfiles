@@ -96,3 +96,6 @@ export NVM_DIR="/Users/hguillermo/.nvm"
 # GOLAND path
 export GOPATH=$HOME/code/golang
 
+# Add mysql 5.7 to the path
+export PATH=/usr/local/mysql-5.7.25-macos10.14-x86_64/bin:$PATH
+
