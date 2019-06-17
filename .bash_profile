@@ -99,3 +99,19 @@ export GOPATH=$HOME/code/golang
 # Add mysql 5.7 to the path
 export PATH=/usr/local/mysql-5.7.25-macos10.14-x86_64/bin:$PATH
 
+# Load rbenv automatically
+eval "$(rbenv init -)"
+
+# Add rbenv shims
+export PATH=~/.rbenv/shims:$PATH
+export RBENV_VERSION=2.5.1
+
+# If you need to have libxml2 first in your PATH run:
+export PATH=/usr/local/opt/libxml2/bin:$PATH
+
+# For compilers to find libxml2 you may need to set:
+export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+
+# For pkg-config to find libxml2 you may need to set:
+export PKG_CONFIG_PATH=/usr/local/opt/libxml2/lib/pkgconfig
