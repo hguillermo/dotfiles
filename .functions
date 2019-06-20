@@ -169,3 +169,8 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Check if port is being used by some process.
+function oport() {
+	lsof -nP -i4TCP:$1 | grep LISTEN
+}
