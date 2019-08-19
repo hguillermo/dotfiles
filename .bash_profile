@@ -63,7 +63,9 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export ANDROID_HOME="/Users/hguillermo/Library/Android/sdk"
 export APP_HOME="/Users/hguillermo/Library/Android/sdk/tools"
+export PATH=$APP_HOME:$PATH
 export PATH="/Users/hguillermo/Library/Android/sdk/tools/bin:$PATH"
+export PATH="/Users/hguillermo/Library/Android/sdk/platform-tools:$PATH"
 
 # Fast Company stuff
 export GITREPO=/Users/hguillermo/code
