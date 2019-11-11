@@ -96,6 +96,10 @@ export TXJP_AWS_ACCESSKEYID=$FC_PRIVATE_TXJP_AWS_ACCESSKEYID
 export TXJP_AWS_SECRETACCESSKEY=$FC_PRIVATE_TXJP_AWS_SECRETACCESSKEY
 export NODE_ENV="development"
 
+# Github global settings
+git config --global user.name "$GITHUB_GLOBAL_USER"
+git config --global user.email "$GITHUB_GLOBAL_EMAIL"
+
 # Node Version Manager tool
 export NVM_DIR="/Users/hguillermo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
