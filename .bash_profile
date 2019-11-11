@@ -60,6 +60,8 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Java stuff
 export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home"
 
 export ANDROID_HOME="/Users/hguillermo/Library/Android/sdk"
 export APP_HOME="/Users/hguillermo/Library/Android/sdk/tools"
