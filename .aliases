@@ -12,7 +12,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
@@ -51,6 +51,8 @@ alias gmea="g merge --abort"
 alias gmd="g merge develop"
 alias gckm="g ck master"
 alias gckd="g ck develop"
+alias gun="git reset --soft HEAD~1"
+alias gunh="git reset --hard HEAD~1"
 alias gmmp="git checkout master && git merge develop && git push && git checkout develop"
 alias gcmp="git checkout master && git pull && git checkout @{-1}"
 alias gmerge="git checkout master && git pull && git checkout @{-1} && git merge master"
