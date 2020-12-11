@@ -2,7 +2,7 @@
 export PATH="$HOME/bin:$PATH";
 
 # Add python 3 path
-#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -101,6 +101,7 @@ export NODE_ENV="development"
 # Github global settings
 git config --global user.name "$GITHUB_GLOBAL_USER"
 git config --global user.email "$GITHUB_GLOBAL_EMAIL"
+git config --global pull.rebase true
 
 # Node Version Manager tool
 export NVM_DIR="/Users/hguillermo/.nvm"
